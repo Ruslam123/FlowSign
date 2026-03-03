@@ -2,12 +2,12 @@
 using FlowSign.Domain.Enums;
 public class CreateDocumentCommand
 {
-    public string Title { get; set; }
-    public string Description { get; set; }
-    public SigningType SigningType { get; set; }
-    public Data time ExpiresAt { get; set; }
-    public List<Guid> SignerIds { get; set; }
-    public Guid OwnerId { get; set; }
+    public string Title { get; init; }
+    public string? Description { get; init; }
+    public SigningType SigningType { get; init; }
+    public DataTime? ExpiresAt { get; init; }
+    public List<Guid> SignerIds { get; init; }
+    public Guid OwnerId { get; init; }
 
     public CreateDocumentCommand(string title, string description, SigningType signingType, DateTime expiresAt, List<Guid> signerIds, Guid ownerId)
     {

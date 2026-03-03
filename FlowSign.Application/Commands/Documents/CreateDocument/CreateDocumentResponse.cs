@@ -2,19 +2,19 @@
 using FlowSign.Domain.Enums;
 public class CreateDocumentResponse
 {
-    public Guid Id { get; set; }
-    public string Title { get; set; }
-    public DocumentStatus Status { get; set; }
-    public SigningType SigningType { get; set; }
-    public Data time CreatedAt { get; set; }
-    public Data time ExpiresAt { get; set; }
-    public List<Guid> SignerIds { get; set; }
+    public Guid Id { get; init; }
+    public string Title { get; init; }
+    public DocumentStatus Status { get; init; }
+    public SigningType SigningType { get; init; }
+    public DataTime CreatedAt { get; init; }
+    public DataTime ExpiresAt { get; init; }
+    public List<Guid> SignerIds { get; init; }
 
     public CreateDocumentResponse(Guid id, string title, DocumentStatus status, SigningType signingType, DateTime createdAt, DateTime expiresAt, List<Guid> signerIds)
     {
         Id = id;
         Title = title;
-        Status = status.Draft;
+        Status = status;
         SigningType = signingType;
         CreatedAt = createdAt;
         ExpiresAt = expiresAt;
