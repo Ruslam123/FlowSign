@@ -5,11 +5,11 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		  <PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
 		<ProjectReference Include="..\FlowSign.Application\FlowSign.Application.csproj" />
-		<ProjectReference Include="..\FlowSign.Infrastructure\FlowSign.Infrastructure.csproj" />
+		<ProjectReference Include="..\FlowSign.Domain\FlowSign.Domain.csproj" />
 	</ItemGroup>
 </Project>
