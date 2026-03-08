@@ -8,7 +8,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:8080
-      - ConnectionStrings__Default=Host=db;Database=PersonDb;Username=postgres;Password=p@55w0rd
+      - ConnectionStrings__Default=Host=db;Database=flowsign;Username=postgres;Password=p@55w0rd
       - Jwt__Secret=your-secret-key-minimum-32-characters
       - Jwt__Issuer=flowsign
       - Jwt__Audience=flowsign-client
