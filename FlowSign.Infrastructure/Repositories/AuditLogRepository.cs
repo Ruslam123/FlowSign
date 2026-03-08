@@ -11,7 +11,7 @@ public class AuditLogRepository : IAuditLogRepository
 	{
 		_context = context;
 	}
-	public async Task<List<AuditLog>> GetByDocumentIdAsync(Guid documentId)
+	public async Task<List<AuditLog>> GetByDocumentAsync(Guid documentId)
 	{
 		return await _context.AuditLogs.Where(a => a.DocumentId == documentId).ToListAsync();
     }
@@ -20,7 +20,7 @@ public class AuditLogRepository : IAuditLogRepository
 		await _context.AuditLogs.AddAsync(auditLog);
 		await _context.SaveChangesAsync();
     }
-	public async Task<List<AuditLog>> GetByUserIdAsync(Guid userId)
+	public async Task<List<AuditLog>> GetByUserAsync(Guid userId)
 	{
 		return await _context.AuditLogs.Where(a => a.UserId == userId).ToListAsync();
     }
