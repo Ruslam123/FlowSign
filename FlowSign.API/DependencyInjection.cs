@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿namespace FlowSign.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FlowSign.Application.Interfaces.Repositories;
