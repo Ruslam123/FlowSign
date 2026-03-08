@@ -8,5 +8,6 @@ public class DependencyInjection
 		services.AddScoped<IEmailService, EmailService>();
 		return services;
     }
+}
 
 }
