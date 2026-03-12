@@ -1,4 +1,4 @@
-﻿namespace FlowSign.Application.Commands.Auth.RegisterUser
+﻿namespace FlowSign.Application.Interfaces.Services;
 
 public interface IPasswordHasher
 {

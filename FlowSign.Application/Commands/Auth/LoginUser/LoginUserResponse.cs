@@ -1,9 +1,10 @@
-﻿namespace FlowSign.Application.Commands.Auth.LoginUser; 
+﻿namespace FlowSign.Application.Commands.Auth.LoginUser;
+using FlowSign.Domain.Enums;
 public class LoginUserResponse
 {
-    public string UserName { get; set; }
-    public string Token { get; set; } = string.Empty;
-    public Guid UserId { get; set; }
-    public string Email { get; set; }
-    public string Role { get; set; }
+    public string UserName { get; init; }
+    public string Token { get; init; } = string.Empty;
+    public Guid UserId { get; init; }
+    public string Email { get; init; }
+    public UserRole Role { get; init; }
 }
